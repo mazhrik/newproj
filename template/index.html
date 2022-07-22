@@ -1,0 +1,464 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<headerr>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-10 col-sm-9">
+                <a href="index.html"> <img src="{% static 'images/logo1.jpeg' %} " height="100%" width="50%"></a>
+            </div>
+
+        </div>
+    </div>
+
+
+</headerr>
+<header>
+    <div class="container">
+        <div class="row">
+
+            <div class="col-md-4 col-sm-5">
+                <h4>Welcome to a David Hodes Opticians</h4>
+            </div>
+
+            <div class="col-md-8 col-sm-7 text-align-right">
+                <span class="phone-icon"><i class="fa fa-phone"></i>0161-773-9584</span>
+                <span class="date-icon"><i class="fa fa-calendar-plus-o"></i>(Monday-Friday)</span>
+                <span class="email-icon"><i class="fa fa-envelope-o"></i> <a
+                        href="mailto:hodesoptician@gmail.com?subject=New_appointment:patient">hodesoptician@gmail.com</a></span>
+            </div>
+
+        </div>
+    </div>
+</header>
+<!-- MENU -->
+<section class="navbar navbar-default   navbar-static-top" role="navigation">
+    <div class="container">
+
+        <div class="navbar-header">
+            <button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="icon icon-bar"></span>
+                <span class="icon icon-bar"></span>
+                <span class="icon icon-bar"></span>
+            </button>
+
+            <!-- lOGO TEXT HERE -->
+            <a href="index.html" class="navbar-brand"><i class="fa fa-h-square"></i>odes Opticians</a>
+        </div>
+
+        <!-- MENU LINKS -->
+
+        <div class="collapse navbar-collapse">
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="#top" class="smoothScroll">Home</a></li>
+                <li><a href="#about" class="smoothScroll">About Us</a></li>
+                <li><a href="#team" class="smoothScroll">Our Team</a></li>
+                <li><a href="#news" class="smoothScroll">Our Services</a></li>
+                <li><a href="#google-map" class="smoothScroll">Contact</a></li>
+                <li class="appointment-btn"><a href="#appointment">Online Appointment</a></li>
+            </ul>
+        </div>
+
+    </div>
+</section>
+
+
+<!-- HOME -->
+<section id="home" class="slider" data-stellar-background-ratio="0.5">
+    <div class="container">
+        <div class="row">
+
+            <div class="owl-carousel owl-theme">
+                <div class="item item-first">
+                    <div class="caption">
+                        <div class="col-md-offset-1 col-md-10">
+                            <h3>Our Eye Exaimnation</h3>
+                            <h1>Click Below To Learn More</h1>
+                            <a href="newpage.html" class="section-btn btn btn-default smoothScroll">Learn more</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="item item-second">
+                    <div class="caption">
+                        <div class="col-md-offset-1 col-md-10">
+                            <h3>EyeWear We Provide</h3>
+                            <h1>New Frame</h1>
+                            <a href="lens.html" class="section-btn btn btn-default btn-gray smoothScroll">Discover
+                                more</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="item item-third">
+                    <div class="caption">
+                        <div class="col-md-offset-1 col-md-10">
+                            <h3>Pellentesque nec libero nisi</h3>
+                            <h1>Your Health Benefits</h1>
+                            <a href="#news" class="section-btn btn btn-default btn-blue smoothScroll">Read Stories</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+<!-- ABOUT -->
+<section id="about">
+    <div class="container">
+        <div class="row">
+
+            <div class="col-md-6 col-sm-6">
+                <div class="about-info">
+                    <h2 class="wow fadeInUp" data-wow-delay="0.6s">Welcome To Davids <i class="fa fa-h-square"></i>odes
+                        Opticians</h2>
+                    <div class="wow fadeInUp" data-wow-delay="0.8s">
+                        <h5>At David Hodes Opticians we have been providing quality eye care and eyewear in Manchester
+                            since 1940.
+                            Today we offer the same friendly and flexible service that Mr David Hodes offered the local
+                            community more than 60 years ago. </h5>
+                        <h5>We strongly believe in continuity of care so that you see
+                            the same practitioner time and time again.In fact many of our patients have been with us for
+                            several generations, trusting us to take
+                            care of their children’s and grandchildren’s eyesight as well as their own</h5>
+                    </div>
+                    <figure class="profile wow fadeInUp" data-wow-delay="1s">
+                        <img src="{% static 'images/author-image.jpg' %}" class="img-responsive" alt="">
+                        <figcaption>
+                            <h3>Dr.Rohail Ahmed Nawaz</h3>
+                            <h5>General Principal</h5>
+                        </figcaption>
+                    </figure>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+<!-- TEAM -->
+<section id="team" data-stellar-background-ratio="1">
+    <div class="container">
+        <div class="row">
+
+            <div class="col-md-6 col-sm-6">
+                <div class="about-info">
+                    <h2 class="wow fadeInUp" data-wow-delay="0.1s">Our Doctors</h2>
+                </div>
+            </div>
+
+            <div class="clearfix"></div>
+
+
+            <div class="col-md-4 col-sm-6">
+                <div class="team-thumb wow fadeInUp" data-wow-delay="0.4s">
+                    <img src="{% static 'images/team-image2.jpg' %}" class="img-responsive" alt="">
+
+                    <div class="team-info">
+                        <h3>Rohail Ahmed Nawaz</h3>
+                        <p> BSC (HONS) MCOPTOM</p>
+                        <div class="team-contact-info">
+                            <li>Ray graduated in 2007. He always strives to ensure a good balance between giving honest
+                                open advice and excellent clinical care. He ensures that all our clients always receive
+                                a fantastic, consistent service.
+                                People warm to Ray's gentle and relaxed manner and as a result he has a very loyal
+                                following.
+                            </li>
+                            <!--                            <p><i class="fa fa-envelope-o"></i> <a href="#">pregnancy@company.com</a></p>-->
+                        </div>
+                        <h3>Registered in: </h3>
+                        <br>
+                        <ul>
+                            <li>General Optical Council (GOC)</li>
+                            <li>Association of Optometrists (AOP)</li>
+                            <li>Ophthalmic Performers list OPL</li>
+                            <li>National Health Service (NHS)</li>
+                            <li>British Association of Performing Arts Medicine (BAPAM)</li>
+                        </ul>
+                        <!--                        <ul class="social-icon">-->
+                        <!--                            <li><a href="#" class="fa fa-facebook-square"></a></li>-->
+                        <!--                            <li><a href="#" class="fa fa-envelope-o"></a></li>-->
+                        <!--                            <li><a href="#" class="fa fa-flickr"></a></li>-->
+                        <!--                        </ul>-->
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="col-md-4 col-sm-6">
+                <div class="team-thumb wow fadeInUp" data-wow-delay="0.6s">
+                    <img src="{% static 'images/team-image3.jpg' %}" class="img-responsive" alt="">
+
+                    <div class="team-info">
+                        <h3>Miasha Nakahara</h3>
+                        <p>Cardiology</p>
+                        <div class="team-contact-info">
+                            <li>Alison is our friendly and experienced receptionist. She is able to deal with many of
+                                your enquiries and ensures that you are greeted with a smile
+                            </li>
+                            <!--                            <p><i class="fa fa-envelope-o"></i> <a href="#">cardio@company.com</a></p>-->
+
+
+                        </div>
+                        <!--                        <ul class="social-icon">-->
+                        <!--                            <li><a href="#" class="fa fa-twitter"></a></li>-->
+                        <!--                            <li><a href="#" class="fa fa-envelope-o"></a></li>-->
+                        <!--                        </ul>-->
+                    </div>
+
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6">
+                <div class="team-thumb wow fadeInUp" data-wow-delay="0.2s">
+                    <img src=" {% static 'images/team-image1.jpg' %}" class="img-responsive" alt="">
+
+                    <div class="team-info">
+                        <h3>Alison Coulter</h3>
+                        <p>Receptionist and Practice Administrator</p>
+                        <div class="team-contact-info">
+                            <li>Alison is our friendly and experienced receptionist. She is able to deal with many of
+                                your enquiries and ensures that you are greeted with a smile.Alison is a key member of
+                                our super friendly and efficient Front-of-House team who ensure everything is ready for
+                                the patient’s journey through the practice.
+                            </li>
+                            <!--                            <p><i class="fa fa-envelope-o"></i> <a href="" target="_blank">general@company.com</a></p>-->
+                        </div>
+                        <!--                        <ul class="social-icon">-->
+                        <!--                            <li><a href="#" class="fa fa-linkedin-square"></a></li>-->
+                        <!--                            <li><a href="#" class="fa fa-envelope-o"></a></li>-->
+                        <!--                        </ul>-->
+                    </div>
+
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+</section>
+
+
+<!-- NEWS -->
+<section id="news" data-stellar-background-ratio="2.5">
+    <div class="container">
+        <div class="row">
+
+            <div class="col-md-12 col-sm-12">
+                <!-- SECTION TITLE -->
+                <div class="section-title wow fadeInUp" data-wow-delay="0.1s">
+                    <h2>Services</h2>
+                </div>
+            </div>
+
+            <div class="col-md-4 col-sm-6">
+                <!-- NEWS THUMB -->
+                <div class="news-thumb wow fadeInUp" data-wow-delay="0.4s">
+                    <a>
+                        <img src="{% static 'images/PIC1.jpg' %}" class="img-responsive" alt="">
+                    </a>
+                    <div class="news-info">
+                        <!--                        <span>March 08, 2018</span>-->
+                        <h3>Contact Lens Clinic</h3>
+                        <p>We provides routine eye examinations and contact lens fitting to correct
+                            vision disorders and medical conditions.</p>
+                        <!--                        <div class="author">-->
+                        <!--                                                        <img src="{% static 'images/author-image.jpg' %}" class="img-responsive" alt="">-->
+                        <!--                            <div class="author-info">-->
+                        <!--                                <h5>Jeremie Carlson</h5>-->
+                        <!--                                <p>CEO / Founder</p>-->
+                        <!--                            </div>-->
+                        <!--                        </div>-->
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 col-sm-6">
+                <!-- NEWS THUMB -->
+                <div class="news-thumb wow fadeInUp" data-wow-delay="0.6s">
+                    <a>
+                        <img src="{% static 'images/pic2.jpg' %}" class="img-responsive" alt="">
+                    </a>
+                    <div class="news-info">
+                        <!--                        <span>February 20, 2018</span>-->
+                        <h3>VDU Visual Assessments</h3>
+                        <p>We can provide a full VDU assessment and eye test for you. During the eye
+                            examination we will examine the eyes thoroughly as well as test their
+                            sight for any visual anomaly</p>
+                        <!--                        <div class="author">-->
+                        <!--                            <img src="{% static 'images/author-image.jpg' %}" class="img-responsive" alt="">-->
+                        <!--                            <div class="author-info">-->
+                        <!--                                <h5>Jason Stewart</h5>-->
+                        <!--                                <p>General Director</p>-->
+                        <!--                            </div>-->
+                        <!--                        </div>-->
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 col-sm-6">
+                <!-- NEWS THUMB -->
+                <div class="news-thumb wow fadeInUp" data-wow-delay="0.8s">
+                    <a>
+                        <img src="{% static 'images/low.jpg' %}" class="img-responsive" alt="">
+                    </a>
+                    <div class="news-info">
+                        <!--                        <span>January 27, 2018</span>-->
+                        <h3>Low Vision Service for partially sighted patients</h3>
+                        <p>Our low vision specialists aim to maximize the remaining vision of a patient by providing
+                            orientation ,optical
+                            aids , mobility training and psychosocial support</p>
+                        <!--                        <div class="author">-->
+                        <!--                            <img src="{% static 'images/author-image.jpg' %}" class="img-responsive" alt="">-->
+                        <!--                            <div class="author-info">-->
+                        <!--                                <h5>Andrio Abero</h5>-->
+                        <!--                                <p>Online Advertising</p>-->
+                        <!--                            </div>-->
+                        <!--                        </div>-->
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 col-sm-6">
+                <!-- NEWS THUMB -->
+                <div class="news-thumb wow fadeInUp" data-wow-delay="0.8s">
+                    <a>
+                        <img src="{% static 'images/pic3.jpg' %}" class="img-responsive" alt="">
+                    </a>
+                    <div class="news-info">
+                        <!--                        <span>January 27, 2018</span>-->
+                        <h3>Safety and Sports Eyewear</h3>
+                        <p>We offer professional, affordable Sport and safety eyewears from a wide range of amazing
+                            brands.</p>
+                        <!--                        <div class="author">-->
+                        <!--                            <img src="{% static 'images/author-image.jpg' %}" class="img-responsive" alt="">-->
+                        <!--                            <div class="author-info">-->
+                        <!--                                <h5>Andrio Abero</h5>-->
+                        <!--                                <p>Online Advertising</p>-->
+                        <!--                            </div>-->
+                        <!--                        </div>-->
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 col-sm-6">
+                <!-- NEWS THUMB -->
+                <div class="news-thumb wow fadeInUp" data-wow-delay="0.8s">
+                    <a>
+                        <img src="{% static 'images/dis.jpg' %}" class="img-responsive" alt="">
+                    </a>
+                    <div class="news-info">
+                        <!--                        <span>January 27, 2018</span>-->
+                        <h3>Disabled Access</h3>
+                        <p>We ensure that accessible medical equipment is available for people with disabilities (such
+                            as
+                            scales, examination tables, or chairs)</p>
+                        <!--                        <div class="author">-->
+                        <!--                            <img src="{% static 'images/author-image.jpg' %}" class="img-responsive" alt="">-->
+                        <!--                            <div class="author-info">-->
+                        <!--                                <h5>Andrio Abero</h5>-->
+                        <!--                                <p>Online Advertising</p>-->
+                        <!--                            </div>-->
+                        <!--                        </div>-->
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6">
+                <!-- NEWS THUMB -->
+                <div class="news-thumb wow fadeInUp" data-wow-delay="0.8s">
+                    <a>
+                        <img src="{% static 'images/pic5.jpg' %}" class="img-responsive" alt="">
+                    </a>
+                    <div class="news-info">
+                        <!--                        <span>January 27, 2018</span>-->
+                        <h3>Extra time for special needs patients</h3>
+                        <p>We provide extra time for some of our special patients to reduce the physical , communication
+                            and cognitive barriers</p>
+                        <!--                        <div class="author">-->
+                        <!--                            <img src="{% static 'images/author-image.jpg' %}" class="img-responsive" alt="">-->
+                        <!--                            <div class="author-info">-->
+                        <!--                                <h5>Andrio Abero</h5>-->
+                        <!--                                <p>Online Advertising</p>-->
+                        <!--                            </div>-->
+                        <!--                        </div>-->
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+<!-- MAKE AN APPOINTMENT -->
+<section id="appointment" data-stellar-background-ratio="3">
+    <div class="container">
+        <div class="row">
+
+            <div class="col-md-6 col-sm-6">
+                <img src="{% static 'images/appointment-image.jpg' %}" class="img-responsive" alt="">
+            </div>
+
+            <div class="col-md-6 col-sm-6">
+                <!-- CONTACT FORM HERE -->
+                <form id="appointment-form" role="form" method="post" action="{% url 'appointment' %}">
+
+                    {% csrf_token %}
+
+                    <!-- SECTION TITLE -->
+                    <div class="section-title wow fadeInUp" data-wow-delay="0.4s">
+                        <h2>Make an appointment</h2>
+                    </div>
+
+                    <div class="wow fadeInUp" data-wow-delay="0.8s">
+                        <div class="col-md-6 col-sm-6">
+                            <label for="name">Name</label>
+                            <input type="text" class="form-control" id="name" name="name" placeholder="Full Name"
+                                   required>
+                        </div>
+
+                        <div class="col-md-6 col-sm-6">
+                            <label for="email">Email</label>
+                            <input type="email" class="form-control" id="email" name="email" placeholder="Your Email"
+                                   required>
+                        </div>
+
+                        <div class="col-md-6 col-sm-6">
+                            <label>Select Date</label>
+                            <input type="date" name="date" value="" class="form-control" required>
+                        </div>
+                        <div class="col-md-6 col-sm-6">
+                            <label>Select Time</label>
+                            <select name="select_time" class="form-control" required>
+                                <option value="11 AM TO 1 AM">11 AM TO 1 AM</option>
+                                <option value="1 AM TO 3 AM">1 AM TO 3 AM</option>
+                                <option value="3 AM TO 4 AM">3 AM TO 4 AM</option>
+                                <option value="4 AM TO 5 AM">4 AM TO 5 AM</option>
+                                <option value="5 AM TO 6 AM">5 AM TO 6 AM</option>
+                            </select>
+                        </div>
+
+
+                        <div class="col-md-12 col-sm-12">
+                            <label>Phone Number</label>
+                            <input type="tel" class="form-control" id="phone" name="phone" placeholder="Phone" required>
+                            <label for="Message">Additional Message</label>
+                            <textarea class="form-control" rows="5" id="message" name="message"
+                                      placeholder="Message"></textarea>
+                            <button type="submit" class="form-control" id="cf-submit" name="submit">Submit
+                            </button>
+                        </div>
+
+
+                    </div>
+                </form>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+{% endblock %}

@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+    <title>David Hodes Opticians</title>
+    <!--
+
+    Template 2098 Health
+
+    http://www.tooplate.com/view/2098-health
+
+    -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="author" content="Tooplate">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="shortcut icon" type="image/jpeg" href="{% static 'images/logo1.jpeg' %}">
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/font-awesome.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/animate.css' %}">
+    <link rel="stylesheet" href="{% static 'css/owl.carousel.css' %}">
+    <link rel="stylesheet" href="{% static 'css/owl.theme.default.min.css' %}">
+
+    <!-- MAIN CSS -->
+    <link rel="stylesheet" href="{% static 'css/tooplate-style.css' %}">
+
+</head>
+<body id="top" data-spy="scroll" data-target=".navbar-collapse" data-offset="50">
+
+<!-- PRE LOADER -->
+<section class="preloader">
+    <div class="spinner">
+
+        <span class="spinner-rotate"></span>
+
+    </div>
+</section>
+
+
+{% if messages %}
+<ul class="messages">
+    {% for message in messages %}
+    <li class=" alert {{ message.tags }} m-2 " id='msg' role='alert'> {{ message }}</li>
+    {% endfor %}
+</ul>
+{% endif %}
+<!-- HEADER -->
+
+{% block content %}
+{% endblock %}
+<!-- GOOGLE MAP -->
+<section id="google-map">
+    <!-- How to change your own map point
+           1. Go to Google Maps
+           2. Click on your location point
+           3. Click "Share" and choose "Embed map" tab
+           4. Copy only URL and paste it within the src="" field below
+   -->
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2371.3699663850175!2d-2.2859437841544947!3d53.53330808001867!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487baff044a3f1b1%3A0xdb56b201e0ddc9c1!2s14%20Longfield%20Centre%2C%20Prestwich%2C%20Manchester%20M25%201AY%2C%20UK!5e0!3m2!1sen!2s!4v1614984311714!5m2!1sen!2s"
+            width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+
+</section>
+
+
+<!-- FOOTER -->
+<footer data-stellar-background-ratio="5">
+    <div class="container">
+        <div class="row">
+
+            <div class="col-md-4 col-sm-4">
+                <div class="footer-thumb">
+                    <h4 class="wow fadeInUp" data-wow-delay="0.4s">Contact Info</h4>
+                    <x>You can contact us through Email or on our landline number .
+                    </x>
+
+                    <div class="contact-info">
+                        <x><i class="fa fa-phone"></i> 0161-773-9584</x>
+                        <p><i class="fa fa-envelope-o"></i> <a
+                                href="mailto:hodesoptician@gmail.com?subject=New_appointment:patient">hodesoptician@gmail.com</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col-md-4 col-sm-4">
+                <div class="footer-thumb">
+                    <div class="opening-hours">
+                        <h4 class="wow fadeInUp" data-wow-delay="0.4s">Opening Hours</h4>
+                        <x>Monday<span>09:30 AM - 17:30 PM</span></x>
+                        <br/>
+                        <x>Tuesday <span>09:30 AM - 17:30 PM</span></x>
+                        <br/>
+                        <x>Wednesday <span>09:00 AM - 13:00 PM</span></x>
+                        <br/>
+                        <x>Thursday<span>09:30 AM - 17:30 PM</span></x>
+                        <br/>
+                        <x>Friday<span>09:30 AM - 17:30 PM</span></x>
+                        <br/>
+                        <x>Saturday-Sunday<span>Closed</span></x>
+                    </div>
+
+                    <ul class="social-icon">
+                        <li><a href="#" class="fa fa-facebook-square" attr="facebook icon"></a></li>
+                        <li><a href="#" class="fa fa-twitter"></a></li>
+                        <li><a href="#" class="fa fa-instagram"></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-4">
+                <div class="footer-thumb">
+                    <!--                    <h4 class="wow fadeInUp" data-wow-delay="0.4s">Contact Info</h4>-->
+                    <!--                    <x>You can contact us through Email or on our landline number .-->
+                    <!--                    </x>-->
+                    <div class="contact-info">
+                        <h4>Optemetrist</h4>
+                        <x>Mr R.A Nawaz Bsc MCOptom</x>
+                        <h4>Consultant Eye Surgeon</h4>
+                        <x>Mr S.M Chaudhry</x>
+                        <x>M.B.B.S.FRCSEd,DO(irl),FRCOphth(UK)</x>
+                        <h4>14 LONGFIELD CENTRE BURY NEW ROAD PRESTWICH M24 1AY</h4>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-12 col-sm-12 border-top">
+                <div class="col-md-4 col-sm-6">
+                    <div class="copyright-text">
+                        <p>Copyright &copy; 2018 David Hodes Ltd
+
+                            | Reg No : 6277187 </p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-sm-6">
+                    <div class="footer-link">
+                        <a href="#">Laboratory Tests</a>
+                        <a href="#">Departments</a>
+                        <a href="#">Insurance Policy</a>
+                        <a href="#">Careers</a>
+                    </div>
+                </div>
+                <div class="col-md-2 col-sm-2 text-align-center">
+                    <div class="angle-up-btn">
+                        <a href="#top" class="smoothScroll wow fadeInUp" data-wow-delay="1.2s"><i
+                                class="fa fa-angle-up"></i></a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</footer>
+
+<!-- SCRIPTS -->
+<script src="{% static  'js/jquery.js' %} "></script>
+<script src="{% static 'js/bootstrap.min.js ' %}"></script>
+<script src="{% static  'js/jquery.sticky.js' %}"></script>
+<script src="{% static 'js/jquery.stellar.min.js' %}"></script>
+<script src="{% static 'js/wow.min.js' %}"></script>
+<script src="{% static 'js/smoothscroll.js' %}"></script>
+<script src="{% static 'js/owl.carousel.min.js' %}"></script>
+<script src="{% static  'js/custom.js' %}"></script>
+<script>
+    setTimeout(function(){
+        if ($('#msg').length>0) {
+            $('#msg').remove();
+        }
+    },30000)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</script>
+
+</body>
+</html>

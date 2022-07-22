@@ -1,0 +1,136 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<header>
+    <div class="container">
+        <div class="row">
+
+            <div class="col-md-4 col-sm-5">
+                <h4>Welcome to a David Hodes Opticians</h4>
+            </div>
+
+            <div class="col-md-8 col-sm-7 text-align-right">
+                <span class="phone-icon"><i class="fa fa-phone"></i>0161-773-9584</span>
+                <span class="date-icon"><i class="fa fa-calendar-plus-o"></i>(Monday-Friday)</span>
+                <span class="email-icon"><i class="fa fa-envelope-o"></i> <a
+                        href="mailto:hodesoptician@gmail.com?subject=Patient:new_patient">hodesoptician@gmail.com</a></span>
+            </div>
+
+        </div>
+    </div>
+</header>
+
+<!-- MENU -->
+<section class="navbar navbar-default navbar-static-top" role="navigation">
+    <div class="container">
+
+        <div class="navbar-header">
+            <button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="icon icon-bar"></span>
+                <span class="icon icon-bar"></span>
+                <span class="icon icon-bar"></span>
+            </button>
+
+            <!-- lOGO TEXT HERE -->
+            <a href="index.html" class="navbar-brand"><i class="fa fa-h-square"></i>odes Opticians</a>
+        </div>
+
+        <!-- MENU LINKS -->
+
+        <div class="collapse navbar-collapse">
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="index.html#top" class="smoothScroll">Home</a></li>
+                <li><a href="index.html#about" class="smoothScroll">About Us</a></li>
+                <li><a href="index.html#team" class="smoothScroll">Our Team</a></li>
+                <li><a href="#google-map" class="smoothScroll">Contact</a></li>
+                <li class="appointment-btn"><a href="index.html#appointment">Online Appointment</a></li>
+            </ul>
+        </div>
+
+
+    </div>
+</section>
+
+
+<html>
+<section id="news-detail" data-stellar-background-ratio="0.5">
+    <div class="container">
+        <div class="row">
+
+            <div class="col-md-8 col-sm-7">
+                <!-- NEWS THUMB -->
+                <div class="news-detail-thumb">
+                    <div class="news-image">
+                        <h2>Eye Testing Services</h2>
+                        <img src="{% static 'images/news-image3.jpg' %}" class="img-responsive" alt="">
+                    </div>
+                    <h3>Eye Examination:</h3>
+                    <p>At first,The optometrists will ask you about your medical and vision history.
+                        The exam may last from half an hour to several hours, depending on the equipment used. It will
+                        cover your vision and your eye health.
+                        You'll probably have all or most of the following eye tests, and possibly some other ones,
+                        too.</p>
+                    <h3>Eye muscle movement test:</h3>
+                    <p>This checks your eyes’ alignment. The doctor will watch your eyes move while you follow a target
+                        (like a finger tip or their pen) as it moves in different directions</p>
+
+                    <h3>Cover test:</h3>
+                    <p>This tells how well your eyes work together. You’ll stare at a small target some distance away.
+                        The doctor will cover and uncover each eye to observe how much your eyes move. Your doctor will
+                        also be watching for an eye that turns away from the target. This is a condition called
+                        strabismus. You may take the test again with a target close to you.</p>
+                    <h3>External exam and pupil reactions:</h3>
+                    <p>The doctor will watch how your pupils adjust to light and objects close to you. At the same time,
+                        the whites of your eyes and the position of your eyelids will also be checked.
+                        Visual acuity test: You'll sit in front of an eye chart, with letters that get smaller as you
+                        read down each line. You’ll cover each eye in turn and, using the other eye, read aloud, going
+                        down the chart, until you can't read the letters anymore.</p>
+                    <h3>Refraction testing:</h3>
+                    <p>For your exact lens prescription, the doctor can use a computerized refractor. Your doctor may
+                        fine-tune the prescription by flipping the phoropter back and forth between lenses and asking
+                        you which is better. Your prescription will be double checked and fine tuned so dont worry about
+                        giving correct answers we check objectively and subjectively.</p>
+                    <h3>Slit lamp (biomicroscope): </h3>
+                    <p>This device magnifies and lights up the front of your eye. The doctor uses it to check your
+                        cornea, iris, lens, and the back of your eye, looking for signs of certain eye conditions.
+                    </p>
+                    <h3>Retinal examination (ophthalmoscopy): </h3>
+                    <p>This device magnifies and lights up the front of your eye. The doctor uses it to check your
+                        cornea, iris, lens, and the back of your eye, looking for signs of certain eye conditions.
+                    </p>
+                    <h3>Glaucoma testing: </h3>
+                    <p>This procedure checks to see if the fluid pressure inside your eyes is within a normal range.
+                        It's fast, painless, and can be done in a couple of ways:
+                    </p>
+                    <ul>
+                        <li>Tonometer: This is the most accurate. You’ll get drops to numb your eyes. The doctor will
+                            tell you to stare straight ahead and will barely touch the front surface of each eye with a
+                            tool called an applanation tonometer or Tonopen to measure the pressure.
+                        </li>
+                        <li>Puff of air or noncontact tonometer: You’ll stare at a target, and a machine will let out a
+                            small puff of air into each eye. How much your eye resists the puff indicates the pressure
+                            inside it.
+                        </li>
+
+                    </ul>
+                    <h3>Pupil dilation (enlargement):</h3>
+                    <p>With your pupils fully enlarged, the doctor will use tools and lights to check the insides of
+                        your eyes. The eye drops for this part of the exam take about 20-30 minutes to work. They make
+                        your eyes more sensitive to light and blur your vision. These effects may last for several hours
+                        or longer. This is why you might need those sunglasses on your way home.Newer machine can look
+                        in the far back of your retina without your pupils being dilated.
+                    </p>
+                    <h3>Visual field test (perimetry):</h3>
+                    <p>Your visual field is the area you can see in front of you without moving your eyes. Using one of
+                        three tests,optometrists maps what you see at the edges (periphery) of your visual field and
+                        will use this map to diagnose eye conditions.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+{% endblock %}
+
