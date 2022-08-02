@@ -1,19 +1,16 @@
 version: 0.2
 
 phases:
-    commands:
-      -echo install
-  
+  install:
+    runtime-versions:
+      java: corretto11
   pre_build:
     commands:
-      -echo pre_build
-  
+      - echo Nothing to do in the pre_build phase...
   build:
     commands:
-      -echo build
-  
-  post_build:
+      - echo Build started on `date`
 
+  post_build:
     commands:
-      -echo post_build
-       
+      - echo Build completed on `date`
