@@ -15,8 +15,7 @@ phases:
     commands:
       - echo Build completed on `date`
 artifacts:
+  secondary-artifacts:
     files:
       - '**/*'
-secondary-artifacts:
-    files:
-      - '**/*'      
+   
