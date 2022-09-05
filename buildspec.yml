@@ -17,8 +17,6 @@ phases:
 artifacts:
   files:
     - '**/*'
-  secondary-artifacts:
-      files:
-        - '**/*' 
+  
     
    
