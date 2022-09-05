@@ -17,6 +17,10 @@ phases:
 artifacts:
   files:
     - '**/*'
+  secondary-artifacts:
+      files:
+        - '**/*.css'
+      base-directory: "static/css"
   
     
    
