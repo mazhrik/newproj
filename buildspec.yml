@@ -19,9 +19,7 @@ artifacts:
     - '**/*'
   secondary-artifacts:
       files:
-        - '**/animate.css'
-      base-directory: "static/css"
-      discard-paths: yes
+        - requirements.txt
   
     
    
