@@ -18,7 +18,7 @@ artifacts:
     files:
       - '**/*'
     secondary-artifacts:
-      files:
-        - '**/*'  
-  
+        files:
+          - '**/*'  
+    
    
