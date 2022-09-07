@@ -16,12 +16,12 @@ phases:
       - echo Build completed on `date`
 artifacts:
   files:
-    - '**/*'
+    - appspec.yml
   discard-paths: yes
   secondary-artifacts:
     lklklk:
       files:
-        - target/artifact-1.0.jar
+        - appspec.yml
       discard-paths: yes
 
     
