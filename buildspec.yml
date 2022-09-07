@@ -17,6 +17,11 @@ phases:
 artifacts:
   files:
     - '**/*'
+    secondary-artifacts:
+      files:
+        - "**/*"
+      discard-paths: yes
+      base-directory: scripts
   
     
    
