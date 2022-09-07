@@ -19,7 +19,7 @@ artifacts:
     - '**/*'
   secondary-artifacts: 
       files: 
-        - appspec.yml
+        - "appspec.yml"
   
     
    
