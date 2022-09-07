@@ -17,9 +17,6 @@ phases:
 artifacts:
   files:
     - '**/*'
-  secondary-artifacts: 
-      files: 
-        - "appspec.yml"
   
     
    
