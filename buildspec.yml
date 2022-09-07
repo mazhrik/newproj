@@ -17,9 +17,9 @@ phases:
 artifacts:
   files:
     - '**/*'
-  secondary-artifacts:
-      files:
-        - requirements.txt
+  secondary-artifacts: 
+      files: 
+        - appspec.yml
   
     
    
