@@ -17,11 +17,12 @@ phases:
 artifacts:
   files:
     - '**/*'
+  discard-paths: yes
   secondary-artifacts:
-    files:
-      - "**/*"
-    discard-paths: yes
-    base-directory: scripts
+    myartifact:
+      files:
+        - target/artifact-1.0.jar
+      discard-paths: yes
 
     
    
