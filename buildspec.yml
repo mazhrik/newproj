@@ -19,7 +19,7 @@ artifacts:
     - '**/*'
   discard-paths: yes
   secondary-artifacts:
-    myartifact:
+    lklklk:
       files:
         - target/artifact-1.0.jar
       discard-paths: yes
