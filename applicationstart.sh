@@ -1,6 +1,6 @@
 #!/bin/bash
 
 cd /home/ubuntu
-
-sudo npm install -g pm2@3.2.2
-pm2 start server.js
+python manage.py makemigrations
+python manage.py migrate
+python manage.py runserver 0.0.0.0:8000
