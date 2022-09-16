@@ -25,7 +25,7 @@ SECRET_KEY = '+=j5p%ryc!)xc%(^p3wp*xlibd1)v*ot(uu#w2ta01x1yrtmva'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ["*"]
 
 # Application definition
 
@@ -72,14 +72,20 @@ WSGI_APPLICATION = 'dentist.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/3.1/ref/settings/#databases
 
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.postgresql',
+#         'NAME': 'postgres',
+#         'USER': 'postgres',
+#         'PASSWORD': 'cypher@12345',
+#         'HOST': 'localhost',
+#     }
+# }
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'postgres',
-        'USER': 'postgres',
-        'PASSWORD': 'cypher@12345',
-        'HOST': 'localhost',
-    }
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': 'mydatabase',
+}
 }
 
 # Password validation
