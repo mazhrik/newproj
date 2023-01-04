@@ -5,7 +5,7 @@ from django.core.mail import send_mail
 
 from website.models import tablee
 from validate_email import validate_email
-import pyautogui
+# import pyautogui
 
 
 def home(request):
