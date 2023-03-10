@@ -1,5 +1,9 @@
 pipeline {
-    agent any
+    agent {
+        node{
+        label "Jenkins-slave-1"
+        }
+    }
     environment {
         CONTAINER_NAME = 'hospital_app_container_1'
     }
