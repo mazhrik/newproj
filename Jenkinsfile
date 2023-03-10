@@ -1,17 +1,12 @@
 pipeline {
     agent any
     stages {
-        stage('Pull Docker image') {
+        stage('Pull and Run Docker Image') {
             steps {
-                script {
-                    docker.pull('image-name:tag')
-                }
-            }
-        }
-        stage('Run Docker container') {
-            steps {
-                script {
-                    docker.run('image-name:tag')
+                withCredentials([usernamePassword(credentialsId: 'docker_credentials', usernameVariable: 'DOCKER_USER', passwordVariable: 'DOCKER_PASS')]) {
+                    sh "docker login -u $DOCKER_USER -p $DOCKER_PASS"
+                    sh "docker pull malikmuneeb98900/hospital:latest"
+                    sh "docker run malikmuneeb98900/hospital:latest"
                 }
             }
         }
