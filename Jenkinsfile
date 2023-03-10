@@ -1,7 +1,7 @@
 pipeline {
     agent any
     environment {
-        CONTAINER_NAME = 'hospital_app_container'
+        CONTAINER_NAME = 'hospital_app_container_1'
     }
     stages {
         stage('Pull and Run Docker Image') {
