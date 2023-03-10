@@ -12,8 +12,9 @@ pipeline {
                     sh "docker run -d -p  8001:8080 --name $CONTAINER_NAME malikmuneeb98900/hospital:latest"
                     timeout(time: 3, unit: 'MINUTES') {
                         sh "docker stop $CONTAINER_NAME"
+                        sh "docker rm $CONTAINER_NAME"
                     }
-
+                    
                 }
             }
         }
